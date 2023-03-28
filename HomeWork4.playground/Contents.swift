@@ -33,7 +33,7 @@ for (teamName, scores) in resultsOfGames {
  */
 let wallet: [Int] = [5, 10, 20, 50, 100, 200, 500]
 
-func calculateCash() -> Int {
+func calculateCash(_ wallet: [Int]) -> Int {
     var cashInWallet = 0
     
     for bill in wallet {
@@ -43,7 +43,7 @@ func calculateCash() -> Int {
     return cashInWallet
 }
 
-print("\nI have \(calculateCash()) EUR in my wallet\n")
+print("\nI have \(calculateCash(wallet)) EUR in my wallet\n")
 
 /*
  Exercise 3
